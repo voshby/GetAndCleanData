@@ -1,0 +1,25 @@
+This Code Book explains the data to indicate all the variables and summaries calculated in run_analysis.R script, along with units, and any other relevant information:
+
+1. X: data frame storing merged data from X_train.txt and X_test.txt. Each cell stores a number.
+
+2. subject: data frame storing merged data from subject_train.txt and subject_test.txt. Each store an integer as subject code. 
+
+3. Y: data frame storing merged data from Y_train.txt and Y_test.txt. Each cell store an integer as activity code. 
+
+4. features: data frame storing only values in X that are either mean or standard deviation.
+
+5. features_location: data frames storing indices of X, each cell is an integer.
+
+6. activities: data frame matching the the activity codes (in Y) with their appropriate activity names.
+
+7. tidy_data: data frame storing column-bind of subject, Y and X
+
+8. uniqueSubjects: vector storing subject codes of unique subjects, each element is an integer.
+
+9. numSubjects: integer storing number of subjects.
+
+10. numActivities: integer storing number of activities.
+
+11. numCols: integer indicate number of columns in tidy_data.
+
+12. tidy2: data frame storing the final product, tidy data set with the average of each measurement for each activity and each subject.
