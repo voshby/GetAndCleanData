@@ -1,8 +1,8 @@
 # 1. Read and merges the training and the test sets to create one data set.
 
-X <- rbind(read.table("train/X_train.txt"), read.table("test/X_test.txt"))
-subject <- rbind(read.table("train/subject_train.txt"), read.table("test/subject_test.txt"))
-Y <- rbind(read.table("train/y_train.txt"), read.table("test/y_test.txt"))
+X <- rbind(read.table("UCI HAR Dataset/train/X_train.txt"), read.table("UCI HAR Dataset/test/X_test.txt"))
+subject <- rbind(read.table("UCI HAR Dataset/train/subject_train.txt"), read.table("UCI HAR Dataset/test/subject_test.txt"))
+Y <- rbind(read.table("UCI HAR Dataset/train/y_train.txt"), read.table("UCI HAR Dataset/test/y_test.txt"))
 
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 
